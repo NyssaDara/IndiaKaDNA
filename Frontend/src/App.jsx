@@ -7,7 +7,7 @@ import {
   Eye, EyeOff, Menu, X, Sparkles, Upload,
   ClipboardCheck, Lightbulb, Landmark, Search
 } from 'lucide-react'
-import HeritageScene from './heritagescene.jsx'
+import HeritageScene from './HeritageScene.jsx'
 import './App.css'
 
 const photos = [
