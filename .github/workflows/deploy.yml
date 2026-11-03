@@ -22,6 +22,15 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Debug repository files
+        run: |
+          echo "COMMIT:"
+          git rev-parse HEAD
+          echo "APP IMPORT:"
+          grep -n "HeritageScene" Frontend/src/App.jsx
+          echo "COMPONENT FILE:"
+          ls -la Frontend/src/ | grep -i heritagescene
+
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
